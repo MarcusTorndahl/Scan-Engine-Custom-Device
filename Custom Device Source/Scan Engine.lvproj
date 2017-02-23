@@ -225,6 +225,31 @@
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
+				<Item Name="niECAT_SetSlaveState.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_SetSlaveState.vi"/>
+				<Item Name="niecatviapi.dll" Type="Document" URL="/&lt;vilib&gt;/indcomecat/niecatviapi.dll"/>
+				<Item Name="CreateSlaveRefWithhServer.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/_InternalSubVIs/CreateSlaveRefWithhServer.vi"/>
+				<Item Name="neSlave_Connect.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neSlave_Connect.vi"/>
+				<Item Name="neSlave_Disconnect.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neSlave_Disconnect.vi"/>
+				<Item Name="neSlave_VerifyConnection.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neSlave_VerifyConnection.vi"/>
+				<Item Name="niECAT_FoEWrite.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/FoE Service/niECAT_FoEWrite.vi"/>
+				<Item Name="niECAT_FoEGetErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/FoE Service/niECAT_FoEGetErrorInfo.vi"/>
+				<Item Name="niECAT_ClearSlaveLastError.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_ClearSlaveLastError.vi"/>
+				<Item Name="niECAT_CoEReadSDO.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/CoE Service/niECAT_CoEReadSDO.vi"/>
+				<Item Name="niECAT_GetSlaveState.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_GetSlaveState.vi"/>
+				<Item Name="neDriver_ Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neDriver_ Initialize.vi"/>
+				<Item Name="neSlave_GetU32Property.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neSlave_GetU32Property.vi"/>
+				<Item Name="niECATGenerateODForFPGAIOV.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATGenerateODForFPGAIOV.vi"/>
+				<Item Name="niECATWipebackFoE.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATWipebackFoE.vi"/>
+				<Item Name="niECATGenerateXMLForFPGAIOV.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATGenerateXMLForFPGAIOV.vi"/>
+				<Item Name="niECATGenerateXMLStringForMapODArray.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATGenerateXMLStringForMapODArray.vi"/>
+				<Item Name="niECATXMLStringForMapOD.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATXMLStringForMapOD.vi"/>
+				<Item Name="niECATMapODStruct.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATMapODStruct.ctl"/>
+				<Item Name="niECATCreateXMLStringForPDOEntry.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATCreateXMLStringForPDOEntry.vi"/>
+				<Item Name="niECATGenerateMapODStructForXML.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATGenerateMapODStructForXML.vi"/>
+				<Item Name="niECATCreatePDOEntryForXML.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATCreatePDOEntryForXML.vi"/>
+				<Item Name="niECATGetMappingOD.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATGetMappingOD.vi"/>
+				<Item Name="niECATCreateXMLSringForModuleID.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATCreateXMLSringForModuleID.vi"/>
+				<Item Name="niECATFPGAODFoE.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAODFoE.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -263,6 +288,22 @@
 			<Item Name="_copyToHost.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_copyToHost.vi"/>
 			<Item Name="_recodeResult.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_recodeResult.vi"/>
 			<Item Name="niecatviapi.dll" Type="Document" URL="niecatviapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="_niECATSlaveFirmwareDownload.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_niECATSlaveFirmwareDownload.vi"/>
+			<Item Name="_downloadFirmwareProgress.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_downloadFirmwareProgress.vi"/>
+			<Item Name="_resetSlaveStateToBootStrap.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_resetSlaveStateToBootStrap.vi"/>
+			<Item Name="_CloseFoEWrite.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_CloseFoEWrite.vi"/>
+			<Item Name="_ExecuteFoEWrite.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_ExecuteFoEWrite.vi"/>
+			<Item Name="_FoEWriteData.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_FoEWriteData.vi"/>
+			<Item Name="_checkFoEPassword.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_checkFoEPassword.vi"/>
+			<Item Name="_VerifyFirmwareVersion.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_VerifyFirmwareVersion.vi"/>
+			<Item Name="_InputFoEPassword.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_InputFoEPassword.vi"/>
+			<Item Name="_StartFoEWrite.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_StartFoEWrite.vi"/>
+			<Item Name="_niECATSetSlaveBootstrap.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_niECATSetSlaveBootstrap.vi"/>
+			<Item Name="_createSlaveRefnum.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_createSlaveRefnum.vi"/>
+			<Item Name="_convertMBCSToUTF8.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_convertMBCSToUTF8.vi"/>
+			<Item Name="niECATLVProvider.mxx" Type="Document" URL="niECATLVProvider.mxx">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 		</Item>
