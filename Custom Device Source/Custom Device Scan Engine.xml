@@ -747,8 +747,8 @@
           <GUID>10E725DC-90F1-A4D3-A1C2-D8F9C2DBB1E6</GUID>
           <Type>Action</Type>
           <Name>
-            <eng>Add NI 9144 ECAT Slave</eng>
-            <loc>Add NI 9144 ECAT Slave</loc>
+            <eng>Add NI 914x ECAT Slave</eng>
+            <loc>Add NI 914x ECAT Slave</loc>
           </Name>
           <Item2Launch>
             <Type>To Common Doc Dir</Type>
@@ -779,16 +779,16 @@
           <Type>Action</Type>
           <ReferencedGUID>10E725DC-90F1-A4D3-A1C2-D8F9C2DBB1E6</ReferencedGUID>
           <ButtonText>
-            <eng>Add NI 9144 ECAT Slave</eng>
-            <loc>Add NI 9144 ECAT Slave</loc>
+            <eng>Add NI 914x ECAT Slave</eng>
+            <loc>Add NI 914x ECAT Slave</loc>
           </ButtonText>
           <Caption>
-            <eng>Add NI 9144 ECAT Slave</eng>
-            <loc>Add NI 9144 ECAT Slave</loc>
+            <eng>Add NI 914x ECAT Slave</eng>
+            <loc>Add NI 914x ECAT Slave</loc>
           </Caption>
           <TipStrip>
-            <eng>Add NI 9144 ECAT Slave</eng>
-            <loc>Add NI 9144 ECAT Slave</loc>
+            <eng>Add NI 914x ECAT Slave</eng>
+            <loc>Add NI 914x ECAT Slave</loc>
           </TipStrip>
           <Documentation>
             <eng />
