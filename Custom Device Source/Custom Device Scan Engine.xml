@@ -839,10 +839,40 @@
     </Page>
     <Page>
       <Name>
-        <eng>Scan Engine EtherCAT Slave</eng>
-        <loc>Scan Engine EtherCAT Slave</loc>
+        <eng>Scan Engine EtherCAT 914x Slave</eng>
+        <loc>Scan Engine EtherCAT 914x Slave</loc>
       </Name>
       <GUID>50877E70-98F5-BFCC-3809-88209D9D28F5</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\rio expansion chassis.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT Slave.vi</Path>
+      </Item2Launch>
+    </Page>
+	    <Page>
+      <Name>
+        <eng>Scan Engine EtherCAT 9144 Slave</eng>
+        <loc>Scan Engine EtherCAT 9144 Slave</loc>
+      </Name>
+      <GUID>0967D9B5-C270-4E7D-AF0D-EBA564935FF3</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\rio expansion chassis.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT Slave.vi</Path>
+      </Item2Launch>
+    </Page>
+	    <Page>
+      <Name>
+        <eng>Scan Engine EtherCAT 9145 Slave</eng>
+        <loc>Scan Engine EtherCAT 9145 Slave</loc>
+      </Name>
+      <GUID>F08D8E42-E070-4D6E-B502-45A5BF0753B8</GUID>
       <Glyph>
         <Type>To Application Data Dir</Type>
         <Path>System Explorer\Glyphs\rio expansion chassis.png</Path>
