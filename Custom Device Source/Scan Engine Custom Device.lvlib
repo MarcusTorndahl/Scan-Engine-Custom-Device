@@ -174,11 +174,6 @@
 					<Item Name="ECAT Start FoE Write.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/ECAT Start FoE Write.vi"/>
 					<Item Name="ECAT Execute FoE Write.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/ECAT Execute FoE Write.vi"/>
 				</Item>
-				<Item Name="9145" Type="Folder">
-					<Item Name="9145 - Firmware Download.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/9145 - Firmware Download.vi"/>
-					<Item Name="9145 - FOE from Bitfile.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/9145 - FOE from Bitfile.vi"/>
-					<Item Name="9145 - Get Slave Info.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/9145 - Get Slave Info.vi"/>
-				</Item>
 				<Item Name="Host - Refresh All.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/Host - Refresh All.vi"/>
 				<Item Name="Host - Get HW Config.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/Host - Get HW Config.vi"/>
 				<Item Name="Host - Download.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/Host - Download.vi"/>
