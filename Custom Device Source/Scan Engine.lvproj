@@ -298,6 +298,8 @@
 			<Item Name="niecatviapi.dll" Type="Document" URL="niecatviapi.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="DS402 Drive ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave RT-Data-Array.ctl"/>
+			<Item Name="DS402 Drive - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave Data.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration - Debug" Type="Source Distribution">

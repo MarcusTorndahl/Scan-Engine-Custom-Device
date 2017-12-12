@@ -95,6 +95,7 @@
 			<Item Name="Generic ECAT Slave IOV Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave IOV Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave Data Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave RT-Data-Array.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave Data Cluster.ctl"/>
 		</Item>
 		<Item Name="System Explorer" Type="Folder">
 			<Item Name="FPGA Target.ctl" Type="VI" URL="../Type Defs/FPGA Target.ctl"/>
@@ -382,6 +383,9 @@
 				<Item Name="RW Rem IO Slaves.vi" Type="VI" URL="../RT/Read-Write/RW Rem IO Slaves.vi"/>
 				<Item Name="Read ECAT VARs.vi" Type="VI" URL="../RT/Read-Write/Read ECAT VARs.vi"/>
 				<Item Name="RW Generic Slaves.vi" Type="VI" URL="../RT/Read-Write/RW Generic Slaves.vi"/>
+				<Item Name="RW DS402 Drive Slaves.vi" Type="VI" URL="../RT/Read-Write/RW DS402 Drive Slaves.vi"/>
+				<Item Name="Read DS402 Drive VARs.vi" Type="VI" URL="../RT/Read-Write/Read DS402 Drive VARs.vi"/>
+				<Item Name="Write DS402 Drive VARs.vi" Type="VI" URL="../RT/Read-Write/Write DS402 Drive VARs.vi"/>
 				<Item Name="Read REM IO VARs.vi" Type="VI" URL="../RT/Read-Write/Read REM IO VARs.vi"/>
 				<Item Name="Write ECAT VARs.vi" Type="VI" URL="../RT/Read-Write/Write ECAT VARs.vi"/>
 				<Item Name="Write REM IO VARs.vi" Type="VI" URL="../RT/Read-Write/Write REM IO VARs.vi"/>
