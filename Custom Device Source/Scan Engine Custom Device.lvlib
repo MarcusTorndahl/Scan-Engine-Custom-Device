@@ -59,6 +59,7 @@
 		<Item Name="revert.png" Type="Document" URL="../Glyphs/revert.png"/>
 		<Item Name="network disabled.png" Type="Document" URL="../Glyphs/network disabled.png"/>
 		<Item Name="RemoteIOModule.png" Type="Document" URL="../Glyphs/RemoteIOModule.png"/>
+		<Item Name="Axis.png" Type="Document" URL="../Glyphs/Axis.png"/>
 	</Item>
 	<Item Name="Type Defs" Type="Folder">
 		<Item Name="RT" Type="Folder">
@@ -95,7 +96,9 @@
 			<Item Name="Generic ECAT Slave IOV Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave IOV Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave Data Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave RT-Data-Array.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave IOV Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave IOV Cluster.ctl"/>
 			<Item Name="DS402 Drive ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave Data Cluster.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave Action IOV Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave Action IOV Cluster.ctl"/>
 		</Item>
 		<Item Name="System Explorer" Type="Folder">
 			<Item Name="FPGA Target.ctl" Type="VI" URL="../Type Defs/FPGA Target.ctl"/>
@@ -349,10 +352,14 @@
 				<Item Name="REM IO - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/REM IO - Get Slave Data.vi"/>
 				<Item Name="REM IO - Get Slave IOVars.vi" Type="VI" URL="../RT/Initialize/REM IO - Get Slave IOVars.vi"/>
 				<Item Name="DS402 Drive - Get Slave IOVars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave IOVars.vi"/>
-				<Item Name="DS402 Drive - Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar Data.vi"/>
 				<Item Name="DS402 Drive - Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Compare ECAT Vars.vi"/>
 				<Item Name="Config REM IO Mods.vi" Type="VI" URL="../RT/Initialize/Config REM IO Mods.vi"/>
 				<Item Name="Config DS402 Drives.vi" Type="VI" URL="../RT/Initialize/Config DS402 Drives.vi"/>
+				<Item Name="DS402 Drive - Get IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get IOVar VS refs.vi"/>
+				<Item Name="DS402 Drive - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave Data.vi"/>
+				<Item Name="DS402 Drive - Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar Data.vi"/>
+				<Item Name="DS402 Drive - Get ECAT IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar VS refs.vi"/>
+				<Item Name="DS402 Drive - Get Virtual Channel VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Virtual Channel VS refs.vi"/>
 			</Item>
 			<Item Name="Read/Write" Type="Folder">
 				<Item Name="RW All Data.vi" Type="VI" URL="../RT/Read-Write/RW All Data.vi"/>
@@ -413,6 +420,10 @@
 				<Item Name="Ignore Warnings.vi" Type="VI" URL="../RT/Utility/Ignore Warnings.vi"/>
 				<Item Name="Clear Specific Error.vi" Type="VI" URL="../RT/Utility/Clear Specific Error.vi"/>
 				<Item Name="Debugging RT Channels.vi" Type="VI" URL="../RT/Utility/Debugging RT Channels.vi"/>
+			</Item>
+			<Item Name="DS402 State machine" Type="Folder">
+				<Item Name="Process DS402 SM.vi" Type="VI" URL="../RT/DS402 StateMachine/Process DS402 SM.vi"/>
+				<Item Name="DS402.lvlib" Type="Library" URL="../RT/DS402 StateMachine/Library/DS402.lvlib"/>
 			</Item>
 		</Item>
 		<Item Name="Keep Front Panel" Type="Folder">

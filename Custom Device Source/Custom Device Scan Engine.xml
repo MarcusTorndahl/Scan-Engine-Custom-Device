@@ -897,6 +897,21 @@
         <Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT Slave.vi</Path>
       </Item2Launch>
     </Page>
+	<Page>
+      <Name>
+        <eng>Scan Engine EtherCAT DS402 Drive Slave</eng>
+        <loc>Scan Engine EtherCAT DS402 Drive Slave</loc>
+      </Name>
+      <GUID>27504873-d73e-4194-839a-b5826de57c2d</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\Axis.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT Slave.vi</Path>
+      </Item2Launch>
+    </Page>	
     <Page>
       <Name>
         <eng>Scan Engine AO</eng>

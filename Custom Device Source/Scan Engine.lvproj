@@ -5,6 +5,7 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="CCSymbols" Type="Str">Debugging,True;</Property>
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -299,7 +300,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="DS402 Drive ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave RT-Data-Array.ctl"/>
-			<Item Name="DS402 Drive - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave Data.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration - Debug" Type="Source Distribution">
