@@ -259,6 +259,15 @@
 				<Item Name="niECATGetMappingOD.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATGetMappingOD.vi"/>
 				<Item Name="niECATCreateXMLSringForModuleID.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAXML/niECATCreateXMLSringForModuleID.vi"/>
 				<Item Name="niECATFPGAODFoE.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Targets/FPGA/ECat/subVIs/FPGAParsingVIs/niECATFPGAODFoE.vi"/>
+				<Item Name="neDriver_Uninitialize.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neDriver_Uninitialize.vi"/>
+				<Item Name="CreatePDORefWithhServer.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/_InternalSubVIs/CreatePDORefWithhServer.vi"/>
+				<Item Name="niECAT_EnumIOs.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_EnumIOs.vi"/>
+				<Item Name="CreateSlaveRefWithhServer.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/_InternalSubVIs/CreateSlaveRefWithhServer.vi"/>
+				<Item Name="niECAT_SlaveEnumPDOs.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_SlaveEnumPDOs.vi"/>
+				<Item Name="CreateMasterRefWithhServer.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/_InternalSubVIs/CreateMasterRefWithhServer.vi"/>
+				<Item Name="niECAT_EnumSlaves.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_EnumSlaves.vi"/>
+				<Item Name="niECAT_EnumMasters.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_EnumMasters.vi"/>
+				<Item Name="neDriver_ Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neDriver_ Initialize.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -300,6 +309,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="DS402 Drive ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave RT-Data-Array.ctl"/>
+			<Item Name="Filter ECAT Path by Object Index.vi" Type="VI" URL="../Utility/DS402/Filter ECAT Path by Object Index.vi"/>
+			<Item Name="Find IOV Index by Object Index.vi" Type="VI" URL="../Utility/DS402/Find IOV Index by Object Index.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration - Debug" Type="Source Distribution">
