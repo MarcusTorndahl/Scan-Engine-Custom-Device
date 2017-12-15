@@ -59,6 +59,7 @@
 		<Item Name="revert.png" Type="Document" URL="../Glyphs/revert.png"/>
 		<Item Name="network disabled.png" Type="Document" URL="../Glyphs/network disabled.png"/>
 		<Item Name="RemoteIOModule.png" Type="Document" URL="../Glyphs/RemoteIOModule.png"/>
+		<Item Name="Axis.png" Type="Document" URL="../Glyphs/Axis.png"/>
 	</Item>
 	<Item Name="Type Defs" Type="Folder">
 		<Item Name="RT" Type="Folder">
@@ -95,6 +96,9 @@
 			<Item Name="Generic ECAT Slave IOV Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave IOV Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave Data Cluster.ctl"/>
 			<Item Name="Generic ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/Generic ECAT Slave RT-Data-Array.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave IOV Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave IOV Cluster.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave Data Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave Data Cluster.ctl"/>
+			<Item Name="DS402 Drive ECAT Slave Action IOV Cluster.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave Action IOV Cluster.ctl"/>
 		</Item>
 		<Item Name="System Explorer" Type="Folder">
 			<Item Name="FPGA Target.ctl" Type="VI" URL="../Type Defs/FPGA Target.ctl"/>
@@ -124,6 +128,7 @@
 			<Item Name="Scan Engine EtherCAT Master.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine EtherCAT Master.vi"/>
 			<Item Name="Scan Engine EtherCAT Slave.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine EtherCAT Slave.vi"/>
 			<Item Name="Scan Engine EtherCAT Generic Slave.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine EtherCAT Generic Slave.vi"/>
+			<Item Name="Scan Engine EtherCAT DS402 Drive Slave.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine EtherCAT DS402 Drive Slave.vi"/>
 			<Item Name="Scan Engine Custom Main IO Network Variables.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine Custom Main IO Network Variables.vi"/>
 			<Item Name="Scan Engine ECAT IO Network Variables.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine ECAT IO Network Variables.vi"/>
 			<Item Name="Scan Engine RemIO Module Page.vi" Type="VI" URL="../System Explorer/Pages/Scan Engine RemIO Module Page.vi"/>
@@ -252,6 +257,9 @@
 				<Item Name="Scan Engine Update RemIO Subpanel.vi" Type="VI" URL="../System Explorer/Utility/Scan Engine Update RemIO Subpanel.vi"/>
 				<Item Name="Scan Engine Init RemIO Mod.vi" Type="VI" URL="../System Explorer/Utility/Scan Engine Init RemIO Mod.vi"/>
 			</Item>
+			<Item Name="DS402" Type="Folder">
+				<Item Name="Search DS402 device.vi" Type="VI" URL="../System Explorer/Utility/DS402/Search DS402 device.vi"/>
+			</Item>
 		</Item>
 		<Item Name="RTM" Type="Folder">
 			<Item Name="EnableDisable Main Page.vi" Type="VI" URL="../System Explorer/RTM/EnableDisable Main Page.vi"/>
@@ -295,59 +303,68 @@
 				<Item Name="Check Module Config.vi" Type="VI" URL="../RT/Read-Write/Check Module Config.vi"/>
 			</Item>
 			<Item Name="Initialize" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="Build RT Data Cluster.vi" Type="VI" URL="../RT/Initialize/Build RT Data Cluster.vi"/>
-				<Item Name="Get Device Channels.vi" Type="VI" URL="../RT/Initialize/Get Device Channels.vi"/>
-				<Item Name="Get Local and ECAT Config.vi" Type="VI" URL="../RT/Initialize/Get Local and ECAT Config.vi"/>
-				<Item Name="Get Local Config.vi" Type="VI" URL="../RT/Initialize/Get Local Config.vi"/>
-				<Item Name="Get Master and Local Mod IOVs.vi" Type="VI" URL="../RT/Initialize/Get Master and Local Mod IOVs.vi"/>
-				<Item Name="Compare Local.vi" Type="VI" URL="../RT/Initialize/Compare Local.vi"/>
-				<Item Name="Get Module and FPGA Data.vi" Type="VI" URL="../RT/Initialize/Get Module and FPGA Data.vi"/>
-				<Item Name="Get Item IO.vi" Type="VI" URL="../RT/Initialize/Get Item IO.vi"/>
-				<Item Name="Get Module Block Data Refs.vi" Type="VI" URL="../RT/Initialize/Get Module Block Data Refs.vi"/>
-				<Item Name="Get FPGA Data Refs.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data Refs.vi"/>
-				<Item Name="Compare FPGA.vi" Type="VI" URL="../RT/Initialize/Compare FPGA.vi"/>
 				<Item Name="Compare ECAT FPGA Wrapper.vi" Type="VI" URL="../RT/Initialize/Compare ECAT FPGA Wrapper.vi"/>
-				<Item Name="Compare UDVs.vi" Type="VI" URL="../RT/Initialize/Compare UDVs.vi"/>
-				<Item Name="Compare Modules.vi" Type="VI" URL="../RT/Initialize/Compare Modules.vi"/>
-				<Item Name="Get ECAT Config Wrapper.vi" Type="VI" URL="../RT/Initialize/Get ECAT Config Wrapper.vi"/>
+				<Item Name="Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/Compare ECAT Vars.vi"/>
+				<Item Name="Compare FPGA.vi" Type="VI" URL="../RT/Initialize/Compare FPGA.vi"/>
+				<Item Name="Compare Local.vi" Type="VI" URL="../RT/Initialize/Compare Local.vi"/>
 				<Item Name="Compare Masters.vi" Type="VI" URL="../RT/Initialize/Compare Masters.vi"/>
-				<Item Name="Get Master Data.vi" Type="VI" URL="../RT/Initialize/Get Master Data.vi"/>
-				<Item Name="Get Slaves.vi" Type="VI" URL="../RT/Initialize/Get Slaves.vi"/>
-				<Item Name="Get Slave IOVs.vi" Type="VI" URL="../RT/Initialize/Get Slave IOVs.vi"/>
+				<Item Name="Compare Modules.vi" Type="VI" URL="../RT/Initialize/Compare Modules.vi"/>
 				<Item Name="Compare Slaves.vi" Type="VI" URL="../RT/Initialize/Compare Slaves.vi"/>
-				<Item Name="Get Slave Data.vi" Type="VI" URL="../RT/Initialize/Get Slave Data.vi"/>
-				<Item Name="Get ECAT IOVs.vi" Type="VI" URL="../RT/Initialize/Get ECAT IOVs.vi"/>
-				<Item Name="Configure All.vi" Type="VI" URL="../RT/Initialize/Configure All.vi"/>
-				<Item Name="Config Mods.vi" Type="VI" URL="../RT/Initialize/Config Mods.vi"/>
-				<Item Name="Configure Master Wrapper.vi" Type="VI" URL="../RT/Initialize/Configure Master Wrapper.vi"/>
-				<Item Name="Config Module.vi" Type="VI" URL="../RT/Initialize/Config Module.vi"/>
-				<Item Name="Start Scan Engine.vi" Type="VI" URL="../RT/Initialize/Start Scan Engine.vi"/>
-				<Item Name="Convert Path.vi" Type="VI" URL="../RT/Initialize/Convert Path.vi"/>
-				<Item Name="NiFPGA Open.vi" Type="VI" URL="../RT/Initialize/NiFPGA Open.vi"/>
-				<Item Name="Get FPGA Data - ECAT.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data - ECAT.vi"/>
-				<Item Name="Get FPGA Data - Local.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data - Local.vi"/>
-				<Item Name="Get UDV Data.vi" Type="VI" URL="../RT/Initialize/Get UDV Data.vi"/>
-				<Item Name="Get FXP VI Ref.vi" Type="VI" URL="../RT/Initialize/Get FXP VI Ref.vi"/>
-				<Item Name="Get Local and ECAT Refs.vi" Type="VI" URL="../RT/Initialize/Get Local and ECAT Refs.vi"/>
-				<Item Name="Open Variable Refs.vi" Type="VI" URL="../RT/Initialize/Open Variable Refs.vi"/>
-				<Item Name="RSI Modules to Module Type Arrays.vi" Type="VI" URL="../RT/Initialize/RSI Modules to Module Type Arrays.vi"/>
-				<Item Name="RSI Mods to InOutMixed Mods.vi" Type="VI" URL="../RT/Initialize/RSI Mods to InOutMixed Mods.vi"/>
-				<Item Name="Open Module Refs.vi" Type="VI" URL="../RT/Initialize/Open Module Refs.vi"/>
+				<Item Name="Compare UDVs.vi" Type="VI" URL="../RT/Initialize/Compare UDVs.vi"/>
 				<Item Name="Compute Variable Container Size and Type.vi" Type="VI" URL="../RT/Initialize/Compute Variable Container Size and Type.vi"/>
-				<Item Name="Identify Module Size.vi" Type="VI" URL="../RT/Initialize/Identify Module Size.vi"/>
-				<Item Name="Get Generic Slave IOVars.vi" Type="VI" URL="../RT/Initialize/Get Generic Slave IOVars.vi"/>
-				<Item Name="Get Generic Slave Data.vi" Type="VI" URL="../RT/Initialize/Get Generic Slave Data.vi"/>
+				<Item Name="Config DS402 Drives.vi" Type="VI" URL="../RT/Initialize/Config DS402 Drives.vi"/>
+				<Item Name="Config Mods.vi" Type="VI" URL="../RT/Initialize/Config Mods.vi"/>
+				<Item Name="Config Module.vi" Type="VI" URL="../RT/Initialize/Config Module.vi"/>
+				<Item Name="Config REM IO Mods.vi" Type="VI" URL="../RT/Initialize/Config REM IO Mods.vi"/>
+				<Item Name="Configure All.vi" Type="VI" URL="../RT/Initialize/Configure All.vi"/>
+				<Item Name="Configure Master Wrapper.vi" Type="VI" URL="../RT/Initialize/Configure Master Wrapper.vi"/>
+				<Item Name="Convert Path.vi" Type="VI" URL="../RT/Initialize/Convert Path.vi"/>
+				<Item Name="DS402 Drive - Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Compare ECAT Vars.vi"/>
+				<Item Name="DS402 Drive - Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar Data.vi"/>
+				<Item Name="DS402 Drive - Get ECAT IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar VS refs.vi"/>
+				<Item Name="DS402 Drive - Get IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get IOVar VS refs.vi"/>
+				<Item Name="DS402 Drive - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave Data.vi"/>
+				<Item Name="DS402 Drive - Get Slave IOVars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave IOVars.vi"/>
+				<Item Name="DS402 Drive - Get Virtual Channel VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Virtual Channel VS refs.vi"/>
+				<Item Name="Get Device Channels.vi" Type="VI" URL="../RT/Initialize/Get Device Channels.vi"/>
+				<Item Name="Get ECAT Config Wrapper.vi" Type="VI" URL="../RT/Initialize/Get ECAT Config Wrapper.vi"/>
 				<Item Name="Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/Get ECAT IOVar Data.vi"/>
 				<Item Name="Get ECAT IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/Get ECAT IOVar VS refs.vi"/>
-				<Item Name="Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/Compare ECAT Vars.vi"/>
+				<Item Name="Get ECAT IOVs.vi" Type="VI" URL="../RT/Initialize/Get ECAT IOVs.vi"/>
+				<Item Name="Get FPGA Data - ECAT.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data - ECAT.vi"/>
+				<Item Name="Get FPGA Data - Local.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data - Local.vi"/>
+				<Item Name="Get FPGA Data Refs.vi" Type="VI" URL="../RT/Initialize/Get FPGA Data Refs.vi"/>
+				<Item Name="Get FXP VI Ref.vi" Type="VI" URL="../RT/Initialize/Get FXP VI Ref.vi"/>
+				<Item Name="Get Generic Slave Data.vi" Type="VI" URL="../RT/Initialize/Get Generic Slave Data.vi"/>
+				<Item Name="Get Generic Slave IOVars.vi" Type="VI" URL="../RT/Initialize/Get Generic Slave IOVars.vi"/>
+				<Item Name="Get Item IO.vi" Type="VI" URL="../RT/Initialize/Get Item IO.vi"/>
+				<Item Name="Get Local and ECAT Config.vi" Type="VI" URL="../RT/Initialize/Get Local and ECAT Config.vi"/>
+				<Item Name="Get Local and ECAT Refs.vi" Type="VI" URL="../RT/Initialize/Get Local and ECAT Refs.vi"/>
+				<Item Name="Get Local Config.vi" Type="VI" URL="../RT/Initialize/Get Local Config.vi"/>
+				<Item Name="Get Master and Local Mod IOVs.vi" Type="VI" URL="../RT/Initialize/Get Master and Local Mod IOVs.vi"/>
+				<Item Name="Get Master Data.vi" Type="VI" URL="../RT/Initialize/Get Master Data.vi"/>
+				<Item Name="Get Module and FPGA Data.vi" Type="VI" URL="../RT/Initialize/Get Module and FPGA Data.vi"/>
+				<Item Name="Get Module Block Data Refs.vi" Type="VI" URL="../RT/Initialize/Get Module Block Data Refs.vi"/>
+				<Item Name="Get Slave Data.vi" Type="VI" URL="../RT/Initialize/Get Slave Data.vi"/>
+				<Item Name="Get Slave IOVs.vi" Type="VI" URL="../RT/Initialize/Get Slave IOVs.vi"/>
+				<Item Name="Get Slaves.vi" Type="VI" URL="../RT/Initialize/Get Slaves.vi"/>
+				<Item Name="Get UDV Data.vi" Type="VI" URL="../RT/Initialize/Get UDV Data.vi"/>
 				<Item Name="Host - Scan next ECAT Slave Level.vi" Type="VI" URL="../System Explorer/Utility/Target Communication/Host - Scan next ECAT Slave Level.vi"/>
+				<Item Name="Identify Module Size.vi" Type="VI" URL="../RT/Initialize/Identify Module Size.vi"/>
+				<Item Name="NiFPGA Open.vi" Type="VI" URL="../RT/Initialize/NiFPGA Open.vi"/>
+				<Item Name="Open Module Refs.vi" Type="VI" URL="../RT/Initialize/Open Module Refs.vi"/>
+				<Item Name="Open Variable Refs.vi" Type="VI" URL="../RT/Initialize/Open Variable Refs.vi"/>
 				<Item Name="REM IO - Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/REM IO - Compare ECAT Vars.vi"/>
 				<Item Name="REM IO - Get Data Clusters.vi" Type="VI" URL="../RT/Initialize/REM IO - Get Data Clusters.vi"/>
 				<Item Name="REM IO - Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/REM IO - Get ECAT IOVar Data.vi"/>
 				<Item Name="REM IO - Get IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/REM IO - Get IOVar VS refs.vi"/>
 				<Item Name="REM IO - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/REM IO - Get Slave Data.vi"/>
 				<Item Name="REM IO - Get Slave IOVars.vi" Type="VI" URL="../RT/Initialize/REM IO - Get Slave IOVars.vi"/>
-				<Item Name="Config REM IO Mods.vi" Type="VI" URL="../RT/Initialize/Config REM IO Mods.vi"/>
+				<Item Name="RSI Mods to InOutMixed Mods.vi" Type="VI" URL="../RT/Initialize/RSI Mods to InOutMixed Mods.vi"/>
+				<Item Name="RSI Modules to Module Type Arrays.vi" Type="VI" URL="../RT/Initialize/RSI Modules to Module Type Arrays.vi"/>
+				<Item Name="Start Scan Engine.vi" Type="VI" URL="../RT/Initialize/Start Scan Engine.vi"/>
 			</Item>
 			<Item Name="Read/Write" Type="Folder">
 				<Item Name="RW All Data.vi" Type="VI" URL="../RT/Read-Write/RW All Data.vi"/>
@@ -382,11 +399,15 @@
 				<Item Name="RW Rem IO Slaves.vi" Type="VI" URL="../RT/Read-Write/RW Rem IO Slaves.vi"/>
 				<Item Name="Read ECAT VARs.vi" Type="VI" URL="../RT/Read-Write/Read ECAT VARs.vi"/>
 				<Item Name="RW Generic Slaves.vi" Type="VI" URL="../RT/Read-Write/RW Generic Slaves.vi"/>
+				<Item Name="RW DS402 Drive Slaves.vi" Type="VI" URL="../RT/Read-Write/RW DS402 Drive Slaves.vi"/>
+				<Item Name="Read DS402 Drive VARs.vi" Type="VI" URL="../RT/Read-Write/Read DS402 Drive VARs.vi"/>
+				<Item Name="Write DS402 Drive VARs.vi" Type="VI" URL="../RT/Read-Write/Write DS402 Drive VARs.vi"/>
 				<Item Name="Read REM IO VARs.vi" Type="VI" URL="../RT/Read-Write/Read REM IO VARs.vi"/>
 				<Item Name="Write ECAT VARs.vi" Type="VI" URL="../RT/Read-Write/Write ECAT VARs.vi"/>
 				<Item Name="Write REM IO VARs.vi" Type="VI" URL="../RT/Read-Write/Write REM IO VARs.vi"/>
 			</Item>
 			<Item Name="Close" Type="Folder">
+				<Item Name="Close Debug Sessions.vi" Type="VI" URL="../System Explorer/Utility/Debug/Close Debug Sessions.vi"/>
 				<Item Name="NiFPGA Close.vi" Type="VI" URL="../RT/Close/NiFPGA Close.vi"/>
 				<Item Name="Close Local Chassis.vi" Type="VI" URL="../RT/Close/Close Local Chassis.vi"/>
 				<Item Name="Close FPGA.vi" Type="VI" URL="../RT/Close/Close FPGA.vi"/>
@@ -405,6 +426,10 @@
 				<Item Name="Ignore Warnings.vi" Type="VI" URL="../RT/Utility/Ignore Warnings.vi"/>
 				<Item Name="Clear Specific Error.vi" Type="VI" URL="../RT/Utility/Clear Specific Error.vi"/>
 				<Item Name="Debugging RT Channels.vi" Type="VI" URL="../RT/Utility/Debugging RT Channels.vi"/>
+			</Item>
+			<Item Name="DS402 State machine" Type="Folder">
+				<Item Name="Process DS402 SM.vi" Type="VI" URL="../RT/DS402 StateMachine/Process DS402 SM.vi"/>
+				<Item Name="DS402.lvlib" Type="Library" URL="../RT/DS402 StateMachine/Library/DS402.lvlib"/>
 			</Item>
 		</Item>
 		<Item Name="Keep Front Panel" Type="Folder">
