@@ -44,8 +44,14 @@
 			<Item Name="FXP.llb" Type="Document" URL="../FXP.llb"/>
 			<Item Name="Scan Engine.chm" Type="Document" URL="../Scan Engine.chm"/>
 		</Item>
+		<Item Name="_Debug" Type="Folder">
+			<Item Name="Syslog Device Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Init.vi"/>
+			<Item Name="Syslog Device Send.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Send.vi"/>
+			<Item Name="Syslog Device Close.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Close.vi"/>
+			<Item Name="SysLog write contstructs.vi" Type="VI" URL="../Utility/Debug/SysLog write contstructs.vi"/>
+			<Item Name="Syslog Collector Example.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/examples/Syslog Collector Example.vi"/>
+		</Item>
 		<Item Name="Scan Engine Custom Device.lvlib" Type="Library" URL="../Scan Engine Custom Device.lvlib"/>
-		<Item Name="Build VIs.lvlib" Type="Library" URL="../Build VIs/Build VIs.lvlib"/>
 		<Item Name="Modules.lvlibp" Type="LVLibp" URL="../Modules.lvlibp">
 			<Item Name="RSI Module Template" Type="Folder">
 				<Item Name="Module Template.lvclass" Type="LVClass" URL="../Modules.lvlibp/Module Template/Module Template.lvclass"/>
@@ -121,6 +127,7 @@
 			<Item Name="Read From Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Read From Spreadsheet File (DBL).vi"/>
 			<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="../Modules.lvlibp/1abvi3w/vi.lib/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
 		</Item>
+		<Item Name="Build VIs.lvlib" Type="Library" URL="../Build VIs/Build VIs.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -268,6 +275,21 @@
 				<Item Name="niECAT_EnumSlaves.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_EnumSlaves.vi"/>
 				<Item Name="niECAT_EnumMasters.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/Configure Service/niECAT_EnumMasters.vi"/>
 				<Item Name="neDriver_ Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/indcomecat/InternalUse/Configure Service/neDriver_ Initialize.vi"/>
+				<Item Name="syslog_device_functions.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/TypeDefs/syslog_device_functions.ctl"/>
+				<Item Name="syslog_Device Function Engine.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/syslog_Device Function Engine.vi"/>
+				<Item Name="syslog_Hostname.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/syslog_Hostname.vi"/>
+				<Item Name="syslog_Timestamp.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/syslog_Timestamp.vi"/>
+				<Item Name="syslog_facility_codes.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/TypeDefs/syslog_facility_codes.ctl"/>
+				<Item Name="syslog_severity_codes.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/TypeDefs/syslog_severity_codes.ctl"/>
+				<Item Name="util_My IP Address.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/examples/util/util_My IP Address.vi"/>
+				<Item Name="Syslog Collector Close.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Collector Close.vi"/>
+				<Item Name="util_Buffer Strings.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/examples/util/util_Buffer Strings.vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="syslog_message_cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/TypeDefs/syslog_message_cluster.ctl"/>
+				<Item Name="syslog_Message Parse.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/_subVIs/syslog_Message Parse.vi"/>
+				<Item Name="Syslog Collector Read.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Collector Read.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
+				<Item Name="Syslog Collector Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Collector Init.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -753,7 +775,7 @@
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[0].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4BADF3CE-1B05-4408-A3FF-5C5AD900983D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{35C9E63D-9502-4657-8B56-6E172F21D949}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>

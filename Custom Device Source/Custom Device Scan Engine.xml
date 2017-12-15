@@ -906,7 +906,7 @@
 			</Glyph>
 			<Item2Launch>
 				<Type>To Common Doc Dir</Type>
-				<Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT Slave.vi</Path>
+				<Path>Custom Devices\Scan Engine\Scan Engine - Configuration.llb\Scan Engine EtherCAT DS402 Drive Slave.vi</Path>
 			</Item2Launch>
 		</Page>
 		<Page>
