@@ -324,7 +324,6 @@
 				<Item Name="DS402 Drive - Compare ECAT Vars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Compare ECAT Vars.vi"/>
 				<Item Name="DS402 Drive - Get ECAT IOVar Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar Data.vi"/>
 				<Item Name="DS402 Drive - Get ECAT IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get ECAT IOVar VS refs.vi"/>
-				<Item Name="DS402 Drive - Get IOVar VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get IOVar VS refs.vi"/>
 				<Item Name="DS402 Drive - Get Slave Data.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave Data.vi"/>
 				<Item Name="DS402 Drive - Get Slave IOVars.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Slave IOVars.vi"/>
 				<Item Name="DS402 Drive - Get Virtual Channel VS refs.vi" Type="VI" URL="../RT/Initialize/DS402 Drive - Get Virtual Channel VS refs.vi"/>
