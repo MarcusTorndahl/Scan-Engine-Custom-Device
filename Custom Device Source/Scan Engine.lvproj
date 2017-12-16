@@ -333,6 +333,8 @@
 			<Item Name="DS402 Drive ECAT Slave RT-Data-Array.ctl" Type="VI" URL="../Type Defs/DS402 Drive ECAT Slave RT-Data-Array.ctl"/>
 			<Item Name="Filter ECAT Path by Object Index.vi" Type="VI" URL="../Utility/DS402/Filter ECAT Path by Object Index.vi"/>
 			<Item Name="Find IOV Index by Object Index.vi" Type="VI" URL="../Utility/DS402/Find IOV Index by Object Index.vi"/>
+			<Item Name="DS402.lvlib" Type="Library" URL="../../../../SVN/164039_TestCellStandardization/Source/DS402-SEECD/ECAT torque POC/Library/DS402.lvlib"/>
+			<Item Name="IOvariables.ctl" Type="VI" URL="../../../../SVN/164039_TestCellStandardization/Source/DS402-SEECD/ECAT torque POC/Library/main/Controls/IOvariables.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration - Debug" Type="Source Distribution">
