@@ -45,11 +45,14 @@
 			<Item Name="Scan Engine.chm" Type="Document" URL="../Scan Engine.chm"/>
 		</Item>
 		<Item Name="_Debug" Type="Folder">
-			<Item Name="Syslog Device Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Init.vi"/>
-			<Item Name="Syslog Device Send.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Send.vi"/>
-			<Item Name="Syslog Device Close.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Close.vi"/>
-			<Item Name="SysLog write contstructs.vi" Type="VI" URL="../Utility/Debug/SysLog write contstructs.vi"/>
-			<Item Name="Syslog Collector Example.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/examples/Syslog Collector Example.vi"/>
+			<Item Name="Toolkit" Type="Folder">
+				<Item Name="Syslog Device Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Init.vi"/>
+				<Item Name="Syslog Device Send.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Send.vi"/>
+				<Item Name="Syslog Device Close.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Device Close.vi"/>
+				<Item Name="SysLog write contstructs.vi" Type="VI" URL="../Utility/Debug/SysLog write contstructs.vi"/>
+				<Item Name="Syslog Collector Example.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/examples/Syslog Collector Example.vi"/>
+			</Item>
+			<Item Name="Syslog Collector - VS CD debug.vi" Type="VI" URL="../Utility/Debug/Syslog Collector - VS CD debug.vi"/>
 		</Item>
 		<Item Name="Scan Engine Custom Device.lvlib" Type="Library" URL="../Scan Engine Custom Device.lvlib"/>
 		<Item Name="Modules.lvlibp" Type="LVLibp" URL="../Modules.lvlibp">
@@ -290,6 +293,8 @@
 				<Item Name="Syslog Collector Read.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Collector Read.vi"/>
 				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="Syslog Collector Init.vi" Type="VI" URL="/&lt;vilib&gt;/NI/syslog/Syslog Collector Init.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 			</Item>
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -777,7 +782,7 @@
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
 				<Property Name="Source[0].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[0].itemID" Type="Str">{35C9E63D-9502-4657-8B56-6E172F21D949}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A7E861EB-D064-47C2-8CBA-C418982971CE}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>

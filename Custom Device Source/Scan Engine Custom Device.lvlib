@@ -427,6 +427,7 @@
 				<Item Name="Debugging RT Channels.vi" Type="VI" URL="../RT/Utility/Debugging RT Channels.vi"/>
 			</Item>
 			<Item Name="DS402 State machine" Type="Folder">
+				<Item Name="syslog_PublishArray.vi" Type="VI" URL="../Utility/Debug/syslog_PublishArray.vi"/>
 				<Item Name="Process DS402 SM.vi" Type="VI" URL="../RT/DS402 StateMachine/Process DS402 SM.vi"/>
 				<Item Name="DS402.lvlib" Type="Library" URL="../RT/DS402 StateMachine/Library/DS402.lvlib"/>
 			</Item>
