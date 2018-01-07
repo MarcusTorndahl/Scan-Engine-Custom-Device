@@ -1,0 +1,2 @@
+C:\Users\Localization Tester\Desktop\GIT\Scan-Engine-Custom-Device\Custom Device Source\Tools\DisplayTemplates\DS402_displayTemplates.lvproj (DS402_displayTemplates.lvproj)
+    - The control expected to be at "C:\Users\Localization Tester\Desktop\SVN\164039_TestCellStandardization\Source\DS402-SEECD\ECAT torque POC\Library\controls\state.ctl" was loaded from "C:\Users\Localization Tester\Desktop\GIT\Scan-Engine-Custom-Device\Custom Device Source\RT\DS402 StateMachine\Library\controls\state.ctl".
