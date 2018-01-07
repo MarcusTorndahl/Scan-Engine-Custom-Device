@@ -10,6 +10,7 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -19,9 +20,44 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="FM_WS_tool.vi" Type="VI" URL="../FM_WS_tool.vi"/>
-		<Item Name="Workspace Tool Test.vi" Type="VI" URL="../Workspace Tool Test.vi"/>
-		<Item Name="Workspace Tool with Event Messages.vi" Type="VI" URL="../Workspace Tool with Event Messages.vi"/>
+		<Item Name="_qmh" Type="Folder">
+			<Item Name="controls" Type="Folder">
+				<Item Name="UI Data.ctl" Type="VI" URL="../_qmh/controls/UI Data.ctl"/>
+			</Item>
+			<Item Name="support" Type="Folder">
+				<Item Name="Message Queue" Type="Folder">
+					<Item Name="Message Queue.lvlib" Type="Library" URL="../_qmh/support/Message Queue/Message Queue.lvlib"/>
+				</Item>
+				<Item Name="User Event - Stop" Type="Folder">
+					<Item Name="User Event - Stop.lvlib" Type="Library" URL="../_qmh/support/User Event - Stop/User Event - Stop.lvlib"/>
+				</Item>
+				<Item Name="Check Loop Error.vi" Type="VI" URL="../_qmh/support/Check Loop Error.vi"/>
+				<Item Name="Error Handler - Event Handling Loop.vi" Type="VI" URL="../_qmh/support/Error Handler - Event Handling Loop.vi"/>
+				<Item Name="Error Handler - Message Handling Loop.vi" Type="VI" URL="../_qmh/support/Error Handler - Message Handling Loop.vi"/>
+			</Item>
+		</Item>
+		<Item Name="_sandbox" Type="Folder">
+			<Item Name="FM_WS_tool.vi" Type="VI" URL="../FM_WS_tool.vi"/>
+			<Item Name="Workspace Tool Test.vi" Type="VI" URL="../Workspace Tool Test.vi"/>
+			<Item Name="Workspace Tool with Event Messages - Starting point.vi" Type="VI" URL="../Workspace Tool with Event Messages - Starting point.vi"/>
+		</Item>
+		<Item Name="_subVIs" Type="Folder">
+			<Item Name="ds402mgr_Helper.lvlib" Type="Library" URL="../ds402mgr_Helper/ds402mgr_Helper.lvlib"/>
+		</Item>
+		<Item Name="APIs" Type="Folder">
+			<Item Name="UI Controls" Type="Folder">
+				<Item Name="Single Node Browser" Type="Folder">
+					<Item Name="NI_VS UI Single Node Browser.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/UI Controls/Single Node Browser/NI_VS UI Single Node Browser.lvlib"/>
+				</Item>
+				<Item Name="System Definition Tree" Type="Folder">
+					<Item Name="NI_VS UI System Tree.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/UI Controls/System Definition Tree/NI_VS UI System Tree.lvlib"/>
+				</Item>
+				<Item Name="Tree and Alias Browser" Type="Folder">
+					<Item Name="NI_VS UI Tree Alias Browser.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/UI Controls/Tree and Alias Browser/NI_VS UI Tree Alias Browser.lvlib"/>
+				</Item>
+			</Item>
+		</Item>
+		<Item Name="DS402-manager-Main.vi" Type="VI" URL="../DS402-manager-Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AMC.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/AMC/AMC.lvlib"/>
@@ -51,7 +87,6 @@
 				<Item Name="MergeError.vi" Type="VI" URL="/&lt;vilib&gt;/NI Veristand/Execution/Shared/MergeError.vi"/>
 				<Item Name="NI VeriStand - Workspace Tool Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Templates/Workspace Tool Support/NI VeriStand - Workspace Tool Support.lvlib"/>
 				<Item Name="NI_VS Project ExecutionAPI.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Execution/Project/NI_VS Project ExecutionAPI.lvlib"/>
-				<Item Name="NI_VS UI Single Node Browser.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/UI Controls/Single Node Browser/NI_VS UI Single Node Browser.lvlib"/>
 				<Item Name="NI_VS Workspace ExecutionAPI.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI VeriStand/Execution/Workspace/NI_VS Workspace ExecutionAPI.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -91,32 +126,40 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{54AF39D1-08C3-4013-8617-2CDC994CA8D6}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Distribution - Custom Tool</Property>
-				<Property Name="Bld_excludedDirectory[0]" Type="Path">instr.lib</Property>
-				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
-				<Property Name="Bld_excludedDirectoryCount" Type="Int">1</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/ds402_manager.llb</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{21EEEEB1-A58D-492B-97CA-1CD4D63C93A0}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/ds402_manager.llb</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{801E5008-75C1-416E-BB60-D17981EA6CEB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D72B9B0D-9C69-4DFA-8CC7-E2DEBC45E25B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/FM_WS_tool.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_sandbox/FM_WS_tool.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[1].VI.LLBtopLevel" Type="Bool">true</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Workspace Tool with Event Messages.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/DS402-manager-Main.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="Source[2].VI.LLBtopLevel" Type="Bool">true</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/_subVIs/ds402mgr_Helper.lvlib</Property>
+				<Property Name="Source[3].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Library</Property>
+				<Property Name="Source[4].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/_qmh</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 			</Item>
 		</Item>
 	</Item>
