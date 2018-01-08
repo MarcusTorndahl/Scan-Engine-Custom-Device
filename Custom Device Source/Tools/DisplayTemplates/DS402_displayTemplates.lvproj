@@ -341,7 +341,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Display Templates</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Build VIs/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F707B288-97A4-4B9B-A03A-CD03055EA757}</Property>
-				<Property Name="Bld_version.build" Type="Int">43</Property>
+				<Property Name="Bld_version.build" Type="Int">44</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Display Templates</Property>

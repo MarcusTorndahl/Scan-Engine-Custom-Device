@@ -4,6 +4,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="_targetDetails.ctl" Type="VI" URL="../controls/_targetDetails.ctl"/>
+	<Item Name="controls" Type="Folder">
+		<Item Name="_targetDetails.ctl" Type="VI" URL="../controls/_targetDetails.ctl"/>
+	</Item>
 	<Item Name="Get Controller Address.vi" Type="VI" URL="../Get Controller Address.vi"/>
+	<Item Name="Get EtherCAT Slave refs.vi" Type="VI" URL="../Get EtherCAT Slave refs.vi"/>
+	<Item Name="globals.vi" Type="VI" URL="../globals.vi"/>
 </Library>

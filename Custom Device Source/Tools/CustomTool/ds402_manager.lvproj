@@ -101,6 +101,8 @@
 				<Item Name="UnpackedFlatVectorToMatrix.vi" Type="VI" URL="/&lt;vilib&gt;/NI Veristand/Execution/Shared/UnpackedFlatVectorToMatrix.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="IOV engine refnum from target address.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/IOV engine refnum from target address.vi"/>
+				<Item Name="Get Scan Engine Mode.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Get Scan Engine Mode.vi"/>
 			</Item>
 			<Item Name="CustomTool_Data.ctl" Type="VI" URL="../_support/CustomTool_Data.ctl"/>
 			<Item Name="Daemon.vi" Type="VI" URL="../_support/Daemon.vi"/>
@@ -120,6 +122,9 @@
 			<Item Name="NationalInstruments.VeriStand.SystemStorageUI" Type="Document" URL="NationalInstruments.VeriStand.SystemStorageUI">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="niecatviapi.dll" Type="Document" URL="niecatviapi.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Distribution - Custom Tool" Type="Source Distribution">
@@ -128,7 +133,7 @@
 				<Property Name="Bld_buildSpecName" Type="Str">Distribution - Custom Tool</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{21EEEEB1-A58D-492B-97CA-1CD4D63C93A0}</Property>
-				<Property Name="Bld_version.build" Type="Int">13</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
@@ -137,7 +142,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D72B9B0D-9C69-4DFA-8CC7-E2DEBC45E25B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4C397D33-AAE0-4B10-9098-15DA7E98DD7C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_sandbox/FM_WS_tool.vi</Property>
