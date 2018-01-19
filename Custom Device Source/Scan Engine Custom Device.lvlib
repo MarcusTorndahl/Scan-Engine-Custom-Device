@@ -259,6 +259,7 @@
 			</Item>
 			<Item Name="DS402" Type="Folder">
 				<Item Name="Search DS402 device.vi" Type="VI" URL="../System Explorer/Utility/DS402/Search DS402 device.vi"/>
+				<Item Name="Find IOV Index by Object Index.vi" Type="VI" URL="../Utility/DS402/Find IOV Index by Object Index.vi"/>
 			</Item>
 		</Item>
 		<Item Name="RTM" Type="Folder">

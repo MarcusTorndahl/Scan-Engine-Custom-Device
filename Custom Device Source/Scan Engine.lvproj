@@ -312,7 +312,6 @@
 			<Item Name="DOMUserDefRef.dll" Type="Document" URL="DOMUserDefRef.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Find IOV Index by Object Index.vi" Type="VI" URL="../Utility/DS402/Find IOV Index by Object Index.vi"/>
 			<Item Name="Filter ECAT Path by Object Index.vi" Type="VI" URL="../Utility/DS402/Filter ECAT Path by Object Index.vi"/>
 			<Item Name="_getFiles.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_getFiles.vi"/>
 			<Item Name="_defaultLogin.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/indcomecat/_InternalSubVIs/_defaultLogin.vi"/>
@@ -338,7 +337,6 @@
 			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="state.ctl" Type="VI" URL="../../../../SVN/164039_TestCellStandardization/Source/DS402-SEECD/ECAT torque POC/Library/controls/state.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration - Debug" Type="Source Distribution">
