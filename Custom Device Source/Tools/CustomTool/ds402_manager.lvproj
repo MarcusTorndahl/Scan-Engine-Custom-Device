@@ -20,6 +20,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="_BuildVIs" Type="Folder">
+			<Item Name="Post-Build Action.vi" Type="VI" URL="../_BuildVIs/Post-Build Action.vi"/>
+		</Item>
 		<Item Name="_qmh" Type="Folder">
 			<Item Name="controls" Type="Folder">
 				<Item Name="UI Data.ctl" Type="VI" URL="../_qmh/controls/UI Data.ctl"/>
@@ -106,6 +109,11 @@
 				<Item Name="Set Scan Engine Mode.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/ScanEngine/Set Scan Engine Mode.vi"/>
 				<Item Name="Fault.ctl" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/faults/Fault.ctl"/>
 				<Item Name="Clear All Faults.vi" Type="VI" URL="/&lt;vilib&gt;/NIScanEngine/faults/Clear All Faults.vi"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 			</Item>
 			<Item Name="CustomTool_Data.ctl" Type="VI" URL="../_support/CustomTool_Data.ctl"/>
 			<Item Name="Daemon.vi" Type="VI" URL="../_support/Daemon.vi"/>
@@ -135,8 +143,9 @@
 				<Property Name="Bld_buildCacheID" Type="Str">{54AF39D1-08C3-4013-8617-2CDC994CA8D6}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Distribution - Custom Tool</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
+				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/_BuildVIs/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{21EEEEB1-A58D-492B-97CA-1CD4D63C93A0}</Property>
-				<Property Name="Bld_version.build" Type="Int">36</Property>
+				<Property Name="Bld_version.build" Type="Int">39</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Users/Localization Tester/Desktop/GIT/Scan-Engine-Custom-Device/Built/Custom Tool/NI_AB_PROJECTNAME.llb</Property>
@@ -145,7 +154,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{802638C1-2B19-40A0-87B5-680A3A35DE78}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{12A50D97-6E22-4165-833B-13DA6F83BBBD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/_sandbox/FM_WS_tool.vi</Property>
