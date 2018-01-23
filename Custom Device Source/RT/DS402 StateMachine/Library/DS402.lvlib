@@ -7,7 +7,9 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="_subVIs" Type="Folder">
+		<Item Name="command array to mask (U8).vi" Type="VI" URL="../_subVIs/command array to mask (U8).vi"/>
 		<Item Name="Interpret Status Word.vi" Type="VI" URL="../_subVIs/Interpret Status Word.vi"/>
+		<Item Name="Update Drive Status.vi" Type="VI" URL="../_subVIs/Update Drive Status.vi"/>
 	</Item>
 	<Item Name="controls" Type="Folder">
 		<Item Name="control word commands.ctl" Type="VI" URL="../controls/control word commands.ctl"/>
